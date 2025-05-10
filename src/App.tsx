@@ -1,16 +1,12 @@
-import type { Component } from 'solid-js';
+import { Component } from 'solid-js';
+import TypingTest from './components/TypeTestInput';
 
-import logo from './logo.svg';
-import styles from './App.module.css';
-
-const App: Component = () => {
+export default function App() {
   return (
-    <div class="flex items-center justify-center h-screen">
-      <h1 class="bg-red-500 text-white p-6 text-2xl font-bold">
-        Tailwind is working!
-      </h1>
-    </div>
+    <main class="p-8">
+      <h1 class="text-2xl mb-4">Type Speed Race</h1>
+      <TypingTest />
+    </main>
   );
-};
+}
 
-export default App;
